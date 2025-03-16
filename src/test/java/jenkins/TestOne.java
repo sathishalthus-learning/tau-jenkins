@@ -2,6 +2,7 @@ package jenkins;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestOne {
@@ -10,6 +11,8 @@ public class TestOne {
 	public void openBrowser() {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://docs.oracle.com/javase/8/docs/");
+		
+		Assert.assertEquals(true, true);
 		driver.quit();
 	}
 
