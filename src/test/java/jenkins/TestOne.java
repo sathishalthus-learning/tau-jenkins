@@ -16,4 +16,13 @@ public class TestOne {
 		driver.quit();
 	}
 
+	
+	@Test
+	public void failingTest() {
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://docs.oracle.com/javase/8/docs/");
+		
+		Assert.assertEquals(false, true);
+		driver.quit();
+	}
 }
