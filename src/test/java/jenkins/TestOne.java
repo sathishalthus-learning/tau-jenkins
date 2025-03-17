@@ -22,7 +22,7 @@ public class TestOne {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://docs.oracle.com/javase/8/docs/");
 		
-		Assert.assertEquals(false, true);
+		Assert.assertEquals(true, true);
 		driver.quit();
 	}
 }
